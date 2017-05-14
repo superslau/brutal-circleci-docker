@@ -66,3 +66,5 @@ RUN set -ex \
   && rm yarn.js.asc \
   && mv yarn.js /usr/local/bin/yarn \
   && chmod +x /usr/local/bin/yarn
+
+RUN apt-get -y install libgtkextra-dev libgconf2-dev libnss3 libasound2 libxtst-dev libxss1 xvfb
