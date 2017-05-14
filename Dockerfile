@@ -50,7 +50,7 @@ RUN tar -xJf "node-v$NODE_VERSION-linux-x64.tar.xz" -C /usr/local --strip-compon
 RUN rm "node-v$NODE_VERSION-linux-x64.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt
 RUN ln -s /usr/local/bin/node /usr/local/bin/nodejs
 
-ENV YARN_VERSION 0.23.4
+ENV YARN_VERSION 0.24.4
 
 RUN set -ex \
   && for key in \
